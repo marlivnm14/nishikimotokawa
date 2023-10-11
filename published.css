@@ -1,0 +1,128 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+    font-family: Yu Mincho;
+
+    height: 100vh;
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+/* block-000 ******************************************************************** */
+
+.block-000 {
+    height: auto;
+    width: 80%;
+    display: none;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 1px solid rgb(227, 221, 221);
+}
+
+
+.block-000 p {
+    opacity: 0.7;
+    font-size: calc(25px + 8 * ((100vw - 320px) / 1120));
+}
+
+#block {
+    display: flex;
+}
+
+
+/* block-2 ******************************************************************** */
+
+.block-2 {
+
+    height: auto;
+
+    display: flex;
+
+    flex-flow: column;
+
+    width: 80%;
+
+    margin-top: 1%;
+
+    margin-bottom: 1%;
+
+    margin-left: 10%;
+
+    margin-right: 10%;
+
+}
+
+.TITLE {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.TXT-2 {
+    display: flex;
+    justify-content: center;
+}
+
+#aw.trophy::before {
+    top: 10px;
+    left: -19px;
+}
+
+span {
+    margin-left: 20px;
+}
+
+li {
+    padding-bottom: 1.5%;
+}
+
+
+@media all and (max-width: 670px) {
+    body {
+        padding-top: 0;
+    }
+
+    .block-000 p{
+        margin-top: 5.5%;
+        margin-bottom: 5.5%;
+        }
+
+    .block-000{
+        display: block;
+    }
+  
+    .block-2 {
+        scroll-snap-align: center;
+    }
+
+    li {
+        padding-bottom: 3%;
+        font-size: 12px;
+    }
+}

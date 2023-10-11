@@ -260,7 +260,7 @@ a {
 }
 
 #system_dora{
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -381,6 +381,10 @@ li{
 
     margin-bottom: 3%;
 
+}
+
+#b4 img{
+  margin: 0 auto;
 }
 
 
