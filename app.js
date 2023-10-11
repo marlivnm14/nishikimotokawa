@@ -73,6 +73,7 @@ $(function () {
   // html 共通部分読み込み
   $("#header").load("header.html");
   $("#footer").load("footer.html");
+  $("#footer2").load("footer.html");
 });
 
 /**/
