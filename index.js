@@ -54,11 +54,21 @@
           if ($('.slide-buttons li:nth-child(3)').hasClass('active')) {
             $('.slide-buttons li.active').removeClass('active');
             $('.hero-center-section.show').removeClass("show");
+            $('.hero-center-section:nth-child(4)').addClass("show");
+            $('.slide-buttons li:nth-child(4)').addClass('active');
+          }
+          i = 3;
+        }
+        else if(i==3) {
+          if ($('.slide-buttons li:nth-child(4)').hasClass('active')) {
+            $('.slide-buttons li.active').removeClass('active');
+            $('.hero-center-section.show').removeClass("show");
             $('.hero-center-section:nth-child(1)').addClass("show");
             $('.slide-buttons li:nth-child(1)').addClass('active');
           }
           i = 0;
-        }else{
+        }
+        else{
           i=0;
         }
       }, 2000);
