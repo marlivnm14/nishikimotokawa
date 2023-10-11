@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Yu Mincho;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sp_br,
+.tb_br,
+.tb_sp_br {
+    display: none;
+}
+
+
+/* block-000 ******************************************************************** */
+.block {
+    height: auto;
+    width: 80%;
+    display: flex;
+    place-items: center;
+    margin: 0px auto 0px auto;
+    padding: 0.5% 0;
+    border-bottom: 1px solid rgb(227, 221, 221);
+}
+
+.block ul {
+    list-style: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: auto;
+}
+
+.block h4 {
+    opacity: 0.7;
+    font-size: calc(6px + 8 * ((100vw - 320px) / 1120));
+    margin: 0;
+}
+
+.block p {
+    opacity: 0.7;
+    font-size: calc(8px + 8 * ((100vw - 320px) / 1120));
+    margin-top: 0.2%;
+    margin-bottom: 1.5%;
+}
+
+#b0 {
+    display: grid;
+}
+
+#b0 p{
+    opacity: 0.7;
+    font-size: calc(25px + 8 * ((100vw - 320px) / 1120));
+    display: grid;
+    place-items: center;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+#b2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#b3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#b4,
+#b5 {
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+#b4 p, #b5 p {
+    opacity: 0.7;
+    font-size: calc(25px + 8 * ((100vw - 320px) / 1120));
+    display: grid;
+    place-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* block-00 ******************************************************************** */
+
+.hako-00L {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 5%;
+    width: 60%;
+}
+
+#name {
+    font-family: "Times New Roman","Yu Mincho";
+    opacity: 0.7;
+    font-size: calc(14px + 8 * ((100vw - 320px) / 1120));
+    /* margin-bottom: 0; */
+    margin-top: 0.5em;
+}
+
+
+.hako-00R {
+    width: 36%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-left: 1px solid rgb(227, 221, 221);
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* block-0 ******************************************************************** */
+.hako-0L {
+    width: 30%;
+    margin-right: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hako-0R {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* block-1 ******************************************************************** */
+.hako-1L {
+    width: 64%;
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid rgb(227, 221, 221);
+    padding-top: 0%;
+    padding-left: 5%;
+}
+
+.hako-1R {
+    width: 36%;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 3%;
+}
+
+#hako-1tx {
+    padding-left: 20px;
+    margin-bottom: 3%;
+}
+
+span {
+    margin-left: 20px;
+}
+
+
+/* スライドする要素 */
+.content {
+    width: 300px;
+    height: 300px;
+    list-style:none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+ul li a {
+    /* 下記の1行を追加 */
+    display: block;
+    z-index: 100;
+  }
+
+  #b4 ul li a{
+    min-height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul li a img {
+    height: 100%;
+    width: 100%;
+  }
+
+/* スライドレールの枠 */
+.wrap {
+    display: flex;
+    align-items: center;
+    height: 340px;
+    width: 90%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    overflow: hidden;
+}
+
+/* content4つをまとめたスライドブロック */
+.slideshow {
+    display: flex;
+    padding-left:0;
+    -webkit-animation: loop-slide 20s infinite linear 1s both;
+    animation: loop-slide 20s infinite linear 1s both;
+}
+
+@-webkit-keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slide-paused:hover .slideshow {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.content-hover {
+    transition: all 0.2s;
+    margin-right: 20px;
+}
+
+.content-hover:hover {
+    transform: translateY(-20px);
+    border-radius: 0 10%;
+    box-shadow: 0 3px 10px 0 #333;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#linkbox{
+    background-color: rgba(150, 150, 150, 0.6);
+    font-size: 30px;
+    width: 72%;
+    height: 300px;
+    z-index: 100;
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    display: grid;
+    align-items: center;
+
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+#HR {
+    background-image: url("img/HR0.JPG");
+}
+
+#CM {
+    background-image: url("img/CM01.png");
+}
+
+#Music {
+    background-image: url("img/MU02.jpeg");
+}
+
+#HS {
+    background-image: url("img/HS.png");
+}
+
+#DI {
+    background-image: url("img/DI1.png");
+}
+
+#TD {
+    background-image: url("img/TD03.png");
+}
+
+#T01 {
+    background-image: url(img/t01.jpeg);
+}
+
+#B02 {
+    background-image: url(img/b02.jpeg);
+}
+
+#T03 {
+    background-image: url(img/t03.jpeg);
+}
+
+#T04 {
+    background-image: url(img/t04.jpeg);
+}
+
+#R01 {
+    background-image: url(img/r01.jpeg);
+}
+
+#O01 {
+    background-image: url(img/o01.jpeg);
+}
+
+
+/*レスポンシブ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊  */
+
+@media all and (max-width: 1000px) {
+    .block{
+        font-size: 12px;
+    }
+    .tb_sp_br,
+    .tb_br {
+        display: block;
+    }
+}
+
+@media all and (max-width: 880px) and (min-width: 670px) {
+    #b3 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .hako-1L {
+        width: 57%;
+    }
+
+    .hako-1R {
+        width: 43%;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .sp_br {
+        display: block;
+    }
+
+    .tb_br {
+        display: none;
+    }
+
+    #b1 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hako-00L {
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .hako-00R {
+        width: auto;
+        justify-content: center;
+        padding-left: 0;
+        border-left: 0;
+        border-top: 1px solid rgb(227, 221, 221);
+    }
+
+    #b2 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hako-0L {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .hako-0R {
+        width: auto;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        text-align: center;
+        font-size: 10px;
+        place-items: center;
+    }
+
+    .block ul {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: start;
+    }
+
+    #b3 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    #b2 p,
+    #b3 p {
+        font-size: 12px;
+    }
+
+    #b3 h2 {
+        padding-right: 3.7%;
+    }
+
+    #hako-1tx {
+        padding-left: 0;
+        margin-bottom: 5%;
+    }
+
+    .hako-1L,
+    .hako-1R {
+        width: auto;
+    }
+
+    .hako-1L {
+        padding-left: 0;
+        border-right: 0;
+    }
+
+    .hako-1R {
+        padding-left: 0;
+        margin-top: 4%;
+    }
+
+    span {
+        margin-left: 0;
+    }
+
+    #b4,#b5{
+        text-align: center;
+    }
+
+    .hako{
+        display: grid;
+    }
+}

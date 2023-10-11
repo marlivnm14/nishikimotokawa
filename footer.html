@@ -1,0 +1,14 @@
+<div class="container">
+  <p id="view_todayF"></p>
+  <p id="page-top"><a href="#top">Page Top</a></p>
+
+
+  <script type="text/javascript">
+    document.getElementById("view_todayF").innerHTML = getTodayF();
+
+    function getTodayF() {
+      var year = new Date().getFullYear();
+      return "&copy; Nishiki Motokawa " + year;
+    }
+  </script>
+</div>

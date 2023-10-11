@@ -1,182 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ensemble Public House</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Nishiki Motokawa</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="test.css">
 </head>
+
 <body>
-
-  <div id="splash">
-    <div id="splash_logo">
-      <img src="img/logo5.png" alt="" class="fadeUp">
-    </div>
-  </div>
-
-  <header>
-    <div class="container" id="head">
-      <div class="header-left">
-        <a href="#top"><img class="logo" src="img/logo.png"></a>
-      </div>
-      <!-- PC用MENU -->
-      <div class="header-right"> 
-        <a href="#about" id="headabout">ABOUT</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOiBDtrZcQPwToW6cj7h3srjMn7xYkT14jnO1M8w6fMtyVLQ/viewform?usp=sf_link" id="headreg">参加登録</a>
-        <a href="https://www.instagram.com/ensemblepublichouse/"><img class="instagram" src="img/instagram.png"></a>
-      </div>
-      <!-- スマホ用MENU -->
-      <div id="navArea">
-        <nav>
-          <div class="inner">
-            <ul>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdOiBDtrZcQPwToW6cj7h3srjMn7xYkT14jnO1M8w6fMtyVLQ/viewform?usp=sf_link">参加登録</a></li>
-              <li><a href="https://www.instagram.com/ensemblepublichouse/">instagram</a></li>
-            </ul>
+  <canvas id="canvas"></canvas>
+  <div id="index">
+    <div class="hero-center-section">
+      <div class="left-text">Portfolio</div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div id="port" class="img-wrap">
+              <img src="img/r07.jpeg" alt="">
+            </div>
           </div>
-        </nav>
-        <div class="toggle_btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div id="mask"></div>
-      </div>
-
-    </div>
-  </header>
-
-  <div class="block-1" id="top">
-    <div class="hako-1">
-      <div class="top">
-        <h1>Ensemble Public House</h1>
-      </div>
-      <div class="title">
-        <p>すべてのCantorへ。<br>Ensemble Public Houseは音楽を愛する人たちのたまり場。<br>演奏と酒を楽しむための空間です。</p>
-      </div>
-      <div class="btn-wrapper">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOiBDtrZcQPwToW6cj7h3srjMn7xYkT14jnO1M8w6fMtyVLQ/viewform?usp=sf_link" class="btn signup">参加登録はこちら</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="block-2">
-    <div class= "hako-2">
-      <h2>About Ensemble Public House</h2>
-      <div class="textarea">
-        <p>Ensemble Public House（EPH・エフ）は演奏することが<br class="br-bl2-5">大好きなCantorたちのたまり場です。
-          <br>たまり場といっても、EPHの語源となったパブや<br class="br-bl2-4">レストランを経営できる程の財力はありません。。
-          <br>EPHは運営側が手によりをかけて選定した<br class="br-bl2-10">スペースをお借りし、<br class="br-bl2-1">仲間と・初めて会う人と演奏を楽しむ。<br class="br-bl2-6">そして、美味しいお酒を楽しむイベントです。
-          <br>初見演奏・初心者大歓迎。<br class="br-bl2-3">イベント当日のための練習は一切強制しません。<br class="br-bl2-8">（もちろんしたい方はぜひ）
-          <br>なので演奏したいけど、<br class="br-bl2-7">オーケストラの練習には参加できない（面倒くさい）人。 
-          <br>演奏活動を続けたいけど時間がない人。<br class="br-bl2-7">演奏したい曲があるけど仲間がいない人。<br class="br-bl2-2">新しい演奏仲間がほしい人。堅苦しい演奏は嫌な人。
-          <br>そんなわがままCantorたちに<br class="br-bl2-9">ピッタリの場にできればと考えています。
-      </div>
-    </div>
-  </div>
-
-  <div class="block-3">
-    <div class="hako-3">
-      <h2>Spirit of Ensemble Public House.</h2>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img class="logo2" src="img/logo2.png">
-            <p>Cantor</p>
-          </div>
-          <p class="text-contents">演奏を楽しむ人 "Cantor"たちの場所<br>初心者からベテランまで。<br>EPHは自由に好きなように<br class="br-bl3-5">演奏を楽しむための場所です。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img class="logo2" src="img/logo3.png">
-            <p>Brahms and Liszt</p>
-          </div>
-          <p class="text-contents">酔っぱらいを意味する<br class="br-bl3-7">このスラングの通り、<br class="br-bl3-4">音楽家には酒が必需品。<br class="br-bl3-2">敬愛する音楽家、<br class="br-bl3-6">ヨハネス・ブラームスは事実、<br class="br-bl3-3">相当の「酔っぱらい」だったという。<br class="br-bl3-2">EPHはお酒も楽しむための場所です。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img class="logo2" src="img/logo4.png">
-            <p>Ensemble</p>
-          </div>
-          <p class="text-contents">初見から念願の一曲まで、<br class="br-bl3-1">クラシックからロックまで。<br>音と酒を通じて<br class="br-bl3-8">新たなアンサンブルを。</p>
         </div>
       </div>
-      <div class="clear"></div>
     </div>
+    <div class="hero-center-section">
+      <div class="left-text">Biography</div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div id="resume" class="img-wrap">
+              <img src="img/b06.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-center-section">
+      <div class="left-text">Gallery</div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div id="gallery" class="img-wrap">
+              <img src="img/l01.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-center-section">
+      <div class="left-text">Published</div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div id="published" class="img-wrap">
+              <img src="img/o05.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section padding-top-bottom over-hide z-bigger">
+      <ul class="slide-buttons">
+        <li class="">
+          <a href="portfolio.html" class="hover-target" data-hover="portfolio">portfolio</a>
+        </li>
+        <li class="">
+          <a href="resume.html" class="hover-target" class="hover-target" data-hover="Biography">Biography</a>
+        </li>
+        <li class="">
+          <a href="Gallery.html" class="hover-target" class="hover-target" data-hover="gallery">Gallery</a>
+        </li>
+        <li class="">
+          <a href="published.html" class="hover-target" class="hover-target" data-hover="published">Published</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Page cursor
+	================================================== -->
+
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+    <div class='cursor4' id="cursor4"></div>
   </div>
-
-  <div class="block-4">
-    <div class="hako-4">
-      <h2>Ensemble Public House<br class="br-bl4-1">参加の流れ</h2>
-      <ol class="c-stepper">
-        <li class="c-stepper__item">
-          <div class="c-stepper__content">
-            <h3 class="c-stepper__title">Step 1</h3>
-            <p class="c-stepper__desc" style="line-height: 1.4;">参加登録します</p>
-          </div>
-        </li>
-
-        <li class="c-stepper__item">
-          <div class="c-stepper__content">
-            <h3 class="c-stepper__title">Step 2</h3>
-            <p class="c-stepper__desc">運営側が参加者グループに招待します</p>
-          </div>
-        </li>
-
-        <li class="c-stepper__item">
-          <div class="c-stepper__content">
-            <h3 class="c-stepper__title">Step 3</h3>
-            <p class="c-stepper__desc">演奏したい曲があれば参加者に共有しましょう</p>
-          </div>
-        </li>
-
-        <li class="c-stepper__item">
-          <div class="c-stepper__content">
-            <h3 class="c-stepper__title">Step 4</h3>
-            <p class="c-stepper__desc">演奏とお酒を楽しみましょう</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
-
-  <div class="block-5">
-    <div class="hako-5">
-      <div class="schedule">
-        <h2>第一回</h2>
-        <h3>2022年12月 都内近郊で開催予定</h3>
-        <p>参加希望者の予定により、日程は変更します。</p>
-      </div>
-      <div class="event-content">
-        <h2>イベント内容</h2>
-        <h3>事前募集・飛び入り参加による<br class="br-bl5-1">アンサンブル演奏会 <br>レセプション</h3>
-      </div>
-      <div class = "buttons">
-        <a href="mailto:ensemblepublichouse@gmail.com" class="btn message">
-          運営担当者募集中
-        </a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOiBDtrZcQPwToW6cj7h3srjMn7xYkT14jnO1M8w6fMtyVLQ/viewform?usp=sf_link" class="btn message">
-          参加登録する
-        </a>
-      </div>
-      <div class ="staff">
-        <p>運営担当スタッフ募集中　<br class="br-bl5-2">会場の選定などをお願いする予定です
-      </div>
-    </div>
-  </div>
-
-  <footer id="footer">
-    <div class="container">
-      <img src="img/logo.png">
-      <p>All Cantors, enjoy the music.</p>
-      <p id="page-top"><a href="#head">Page Top</a></p> 
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+<script src="index.js"></script>
 
 </body>
+
 </html>
