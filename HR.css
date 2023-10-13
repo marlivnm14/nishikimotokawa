@@ -72,7 +72,7 @@ a {
 
 .wrapper{
   height: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;/*←相対位置*/
   padding-bottom: 65px;/*←footerの高さ*/
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
@@ -114,9 +114,12 @@ a {
 
 }
 
-#DI1{ 
+
+#DI1{
+  height: auto;
+  width: 80%;
+  margin: 0px auto 0px auto;
   position: absolute;
-  margin: 0;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);

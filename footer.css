@@ -20,15 +20,14 @@ footer {
   z-index: 1;
 }
 
-#footer2{
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
 
-  position: absolute;/*←絶対位置*/
-  bottom: 0; /*下に固定*/
+#footer2{
+  width: 100%; 
+  position: absolute; 
+  bottom: 0;
 }
+
+
 
 /* ページアップ用********************************************************
   /*リンクの形状*/

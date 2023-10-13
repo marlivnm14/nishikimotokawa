@@ -1,149 +1,302 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Yu Mincho;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-
-/* block-000 ******************************************************************** */
-.block-000 {
-  height: auto;
-  width:80%;
-  display: flex;
-  justify-content: center;
-  margin-left: 10%; 
-  margin-right: 10%;
-  border-bottom: 1px solid rgb(227, 221, 221);
-}
-
-.block-000 p {
-  opacity: 0.7;
-  font-size: calc(25px + 8 * ((100vw - 320px) / 1120));
-}
-
-/* block-1 ******************************************************************** */
-.block-1 {
-    /* height: 140vh; */
-    display:flex;
-    flex-flow: column;
-    width:80%;
-    margin-top:2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-bottom: 1px solid  rgb(227, 221, 221);
-  }
-  
-  .hako-0{
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-  }
-
-  .hako-01{
-    display:flex;
-    justify-content: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    /* background-color: blue; */
-  }
-
-  .box{
-    height: 60vh;
-    width:40%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    display: flex;
-    flex-flow: column;
-  }
-
-  .IMG{
-    width: 30vw;
-    height: calc(30vw * 0.75);
-    display: flex;
-    justify-content: center;
-    margin-left: 2%;
-    margin-right: 2.5%;
-  }
-
-  .TXT{
-    height: auto;
-    width:60%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-  }
-
-  #TD01 {
-    background-image:url("img/TD04.png");
-    background-repeat:  no-repeat;                           
-    background-position:center center;              
-    background-size:100%; 
-  }
-
-  #TD03 {
-    background-image:url("img/TD01.png");
-    background-repeat:  no-repeat;                           
-    background-position:center center;              
-    /* background-size:100%;  */
-  }
-
-  #TD04 {
-    background-image:url("img/TD02.png");
-    background-repeat:  no-repeat;                           
-    background-position:center center;              
-    /* background-size:100%;  */
-  }
-
-  #TD05 {
-    background-image:url("img/TD03.png");
-    background-repeat:  no-repeat;                           
-    background-position:center center;              
-    /* background-size:100%;  */
-  }
-
-  #zoomback {
-    /* 絶対位置に配置 */
-    position:fixed;
-    top:0;
-    
-    /* 画面いっぱいに */
-    width:100vw;
-    height:100vh;
-    
-    /* 背景を少し透過 */
-    background-color:rgba(0,0,0,0.8);
-    
-    /* 中のimgを中央揃え */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    display:none;
-  
-    z-index: 100;
-  }
-    
-    
-    /* 拡大画像のサイズを調整 */
-    #zoomimg {
-    max-height:75%;
-    max-width:75%;
-  
-    }
-  
-    .deka {
-      animation:deka 0.4s ease-in;
-      }
-      
-      @keyframes deka {
-      from {
-      transform:scale(0.8);
-      opacity: 0.3;
-      }
+* {
+
+    box-sizing: border-box;
+
+  }
+
+  
+
+  body {
+
+    margin: 0;
+
+    font-family: Yu Mincho;
+
+  }
+
+  
+
+  a {
+
+    text-decoration: none;
+
+  }
+
+  .TXT ul {
+
+    list-style: none;
+  }
+
+
+
+/* block-000 ******************************************************************** */
+
+.block-000 {
+
+  height: auto;
+
+  width:80%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-left: 10%; 
+
+  margin-right: 10%;
+
+  border-bottom: 1px solid rgb(227, 221, 221);
+
+}
+
+
+
+.block-000 p {
+
+  opacity: 0.7;
+
+  font-size: calc(25px + 8 * ((100vw - 320px) / 1120));
+
+}
+
+
+
+/* block-1 ******************************************************************** */
+
+.block-1 {
+
+    /* height: 140vh; */
+
+    display:flex;
+
+    flex-flow: column;
+
+    width:80%;
+
+    margin-top:2%;
+
+    margin-left: 10%;
+
+    margin-right: 10%;
+
+    border-bottom: 1px solid  rgb(227, 221, 221);
+
+  }
+
+  
+
+  .hako-0{
+
+    height: 20vh;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: red;
+
+  }
+
+
+
+  .hako-01{
+
+    display:flex;
+
+    justify-content: center;
+
+    padding-top: 2%;
+
+    padding-bottom: 2%;
+
+    /* background-color: blue; */
+
+  }
+
+
+
+  .box{
+
+    height: 60vh;
+
+    width:40%;
+
+    margin-left: 2.5%;
+
+    margin-right: 2.5%;
+
+    display: flex;
+
+    flex-flow: column;
+
+  }
+
+
+
+  .IMG{
+
+    width: 30vw;
+
+    height: calc(30vw * 0.75);
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-left: 2%;
+
+    margin-right: 2.5%;
+
+  }
+
+
+
+  .TXT{
+
+    height: auto;
+
+    width:60%;
+
+    margin-left: 2.5%;
+
+    margin-right: 2.5%;
+
+  }
+
+
+
+  #TD01 {
+
+    background-image:url("img/TD04.png");
+
+    background-repeat:  no-repeat;                           
+
+    background-position:center center;              
+
+    background-size:100%; 
+
+  }
+
+
+
+  #TD03 {
+
+    background-image:url("img/TD01.png");
+
+    background-repeat:  no-repeat;                           
+
+    background-position:center center;              
+
+    /* background-size:100%;  */
+
+  }
+
+
+
+  #TD04 {
+
+    background-image:url("img/TD02.png");
+
+    background-repeat:  no-repeat;                           
+
+    background-position:center center;              
+
+    /* background-size:100%;  */
+
+  }
+
+
+
+  #TD05 {
+
+    background-image:url("img/TD03.png");
+
+    background-repeat:  no-repeat;                           
+
+    background-position:center center;              
+
+    /* background-size:100%;  */
+
+  }
+
+
+
+
+
+  #zoomback {
+
+    /* 絶対位置に配置 */
+
+    position:fixed;
+
+    top:0;
+
+    
+
+    /* 画面いっぱいに */
+
+    width:100vw;
+
+    height:100vh;
+
+    
+
+    /* 背景を少し透過 */
+
+    background-color:rgba(0,0,0,0.8);
+
+    
+
+    /* 中のimgを中央揃え */
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    display:none;
+
+  
+
+    z-index: 100;
+
+  }
+
+    
+
+    
+
+    /* 拡大画像のサイズを調整 */
+
+    #zoomimg {
+
+    max-height:75%;
+
+    max-width:75%;
+
+  
+
+    }
+
+  
+
+    .deka {
+
+      animation:deka 0.4s ease-in;
+
+      }
+
+      
+
+      @keyframes deka {
+
+      from {
+
+      transform:scale(0.8);
+
+      opacity: 0.3;
+
+      }
+
       }
