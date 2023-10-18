@@ -1,57 +1,56 @@
-<script>
-    (function ($) {
-        var $nav = $('#navArea');
-        var $btn = $('.toggle_btn');
-        var $mask = $('#mask');
-        var open = 'open'; // class
-        // menu open close
-        $btn.off('click');
-        $btn.on('click', function () {
-            if (!$nav.hasClass(open)) {
-                $nav.addClass(open);
-            }
-            else {
-                $nav.removeClass(open);
-            }
-        });
-        // mask close
-        $mask.on('click', function () {
-            $nav.removeClass(open);
-        });
-    })(jQuery);
-</script>
-
-<div class="container" id="head">
-    <!-- <div class="header-left">
-        <a href="resume.html"><img class="logo" src="img/log.png"></a>
-    </div> -->
-    <!-- PC用MENU -->
-    <div class="header-right">
-        <a              href="index.html" id="headreg"><img class="logo" src="img/log.png"></a>
-        <a class="resm" href="resume.html" id="headreg">Biography</a>
-        <a class="port" href="portfolio.html" id="headreg">Portfolio</a>
-        <a class="glry" href="Gallery.html" id="headreg">Gallery</a>
-        <a class="publ" href="published.html" id="headreg">Published</a>
-        <a class="mail" href="https://www.instagram.com/usirokaramitarahoboosunadatta/" id="headreg">Contact</a>
-    </div>
-    <!-- スマホ用MENU -->
-    <div id="navArea">
-        <nav>
-            <div class="inner">
-                <ul>
-                    <li><a href="resume.html" id="headreg">Biography</a></li>
-                    <li><a href="portfolio.html" id="headreg">Portfolio</a></li>
-                    <li> <a href="Gallery.html" id="headreg">Gallery</a></li>
-                    <li> <a href="published.html" id="headreg">Published</a></li>
-                    <li><a href="https://www.instagram.com/usirokaramitarahoboosunadatta/" id="headreg">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="toggle_btn" class="toggle_btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div id="mask"></div>
-    </div>
+<script>
+    (function ($) {
+        var $nav = $('#navArea');
+        var $btn = $('.toggle_btn');
+        var $mask = $('#mask');
+        var open = 'open'; // class
+        // menu open close
+        $btn.off('click');
+        $btn.on('click', function () {
+            if (!$nav.hasClass(open)) {
+                $nav.addClass(open);
+            }
+            else {
+                $nav.removeClass(open);
+            }
+        });
+        // mask close
+        $mask.on('click', function () {
+            $nav.removeClass(open);
+        });
+    })(jQuery);
+</script>
+<div class="container" id="head">
+    <!-- <div class="header-left">
+        <a href="resume.html"><img class="logo" src="img/log.png"></a>
+    </div> -->
+    <!-- PC用MENU -->
+    <div class="header-right">
+        <a href="index.html" id="headreg"><img class="logo" src="img/log.png"></a>
+        <a class="resm" href="resume.html" id="headreg">Biography</a>
+        <a class="port" href="portfolio.html" id="headreg">Portfolio</a>
+        <a class="glry" href="Gallery.html" id="headreg">Gallery</a>
+        <a class="publ" href="published.html" id="headreg">Published</a>
+        <a class="mail" href="https://www.instagram.com/usirokaramitarahoboosunadatta/" id="headreg">Contact</a>
+    </div>
+    <!-- スマホ用MENU -->
+    <div id="navArea">
+        <nav>
+            <div class="inner">
+                <ul>
+                    <li><a href="resume.html" id="headreg">Biography</a></li>
+                    <li><a href="portfolio.html" id="headreg">Portfolio</a></li>
+                    <li> <a href="Gallery.html" id="headreg">Gallery</a></li>
+                    <li> <a href="published.html" id="headreg">Published</a></li>
+                    <li><a href="https://www.instagram.com/usirokaramitarahoboosunadatta/" id="headreg">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="toggle_btn" class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="mask"></div>
+    </div>
 </div>

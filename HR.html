@@ -1,269 +1,133 @@
 <!DOCTYPE html>
-
 <html>
 
-
-
 <head>
-
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Nishiki Motokawa</title>
-
-
-
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
   <link rel="stylesheet" type="text/css" href="HR.css">
-
   <link rel="stylesheet" type="text/css" href="header.css">
-
   <link rel="stylesheet" type="text/css" href="footer.css">
-
-<link rel="stylesheet" type="text/css" href="icon.css">
-
-
-
+  <link rel="stylesheet" type="text/css" href="icon.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
   <script src="app.js"></script>
-
 </head>
 
-
-
 <body>
-
   <header id="header"></header>
-
   <div class="block-000">
-
     <div class="hako-000">
-
       <h1>-- HydReminder --</h1>
-
     </div>
-
   </div>
-
   <!-- <div class="scroll-box"> -->
-
-    <div class="block-1">
-
-      <div class="hako-01">
-
-        <div id=HR class="IMG"></div>
-
-        <div class="TXT">
-
-          <h2>HydReminder 水分補給支援システム</h2>
-
-          <ul>
-
-            <li>
-
-              <p class="hardware">Hardware: m5AtomLite(M5Stack社製)・HX711(社製)・温湿度センサ(社製)・Google Pixel Watch(Google社製)</p>
-
-            </li>
-
-            <li>
-
-              <p class="software">Software: ArduinoIDE・Firebase</p>
-
-            </li>
-
-            <li>
-
-              <p class="trophy">Most Discussed Presentation Award・Best poster/demo Award </p>
-
-            </li>            
-
-            <li>
-
-              <a href="https://www.youtube.com/watch?v=H1euNaOrKI8"><p class="youtube">YouTube: https://www.youtube.com/watch?v=H1euNaOrKI8</p></a>
-
-            </li>
-
-          </ul>
-
-          <p>
-
-            ユーザーの健康状態(心拍数)・環境状況(気温・湿度)を考慮した水分補給支援を行うシステム「HydReminder」を開発・評価した。
-
-          </p>
-
-          <h4>本研究の特徴</h4>
-
-          <ul>
-
-            <li>メインターゲット：働く世代</li>
-
-            <li>ユーザの状態に合わせた支援を行う水分補給システム</li>
-
-            <li>使用する環境によってフィードバックの方法が変化する</li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="block-2">
-
-      <div class="TITLE">
-
-        <h2>| 概要</h2>
-
-      </div>
-
-      <div class="TXT-2">
-
-        <p>
-
-          Hydration is essential for maintaining life. Consequently, a lack of awareness of the amount of water required
-
-          and the actual amount of water intake has been issued for all generations and may lead to diseases that result
-
-          in death. However, existing systems still have limited capabilities for tracking hydration reminder systems in
-
-          unconstrained, realistic environments. Therefore, this study employs personalized information based on the
-
-          user's biometric information and environmental information. We proposed and developed a smart bottle cap
-
-          system
-
-          that includes an environmental sensor, a barometric pressure sensor, an infrared sensor, the user's heart rate
-
-          from a smartwatch, and a cap-shaped shell to create a compact system. Our proposed system, 'HydReminder-W'
-
-          promotes proper hydration using the individual's biometric information, which teaches individuals about the
-
-          lack
-
-          of hydration. A comparison of hydration with HydReminder-W showed that the amount of water intake increased
-
-          with
-
-          the use of HydReminder-W. The average System Usability Scale (SUS) score of all the subjects was 78.9 points,
-
-          confirming that HydReminder-W has excellent usability and is helpful as a hydration promotion system.
-
-        </p>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="block-2">
-
-      <div class="TITLE">
-
-        <h2>| 発表文献</h2>
-
-      </div>
-
-      <div class="TXT-2">
-
+  <div class="block-1">
+    <div class="hako-01">
+      <div id=HR class="IMG"></div>
+      <div class="TXT">
+        <h2>HydReminder 水分補給支援システム</h2>
         <ul>
-
-          <li>N. Motokawa et al. HydReminder-W: A Bottle Cap that Listens to Your Heart to Remind You to Drink!. In: HEALTHINF. 2023. p. 199-208.</li>
-
-          <li>N. Motokawa et al. HydReminder: ホルダー駆動型水分補給促進システム. 研究報告ヒューマンコンピュータインタラクション (HCI), 2021, 2021.4: 1-5.<span><i id="aw" class="trophy">Most Discussed Presentation award</i></span></li>
-
-          <li>N. Motokawa et al. コースター駆動型水分補給促進システム. エンタテインメントコンピューティングシンポジウム論文集, 2021, 2021: 38-44.</li>
-
-          <li>N. Motokawa et al. HydReminder-W: Smart Bottle Cap System Using Physiological Information BTI2 2022<span><i id="aw" class="trophy">Best poster/demo award</i></span></li>
-
-          <li>N. Motokawa et al. 水分補給支援システムと行動変容検証 BTI3 2023</li>
-
-          <li>N. Motokawa et al. 人間情報に基づいた水分補給タイミング支援システムと検証 第43回人間情報学会 2022</li>
-
+          <li>
+            <p class="hardware">Hardware: m5AtomLite(M5Stack社製)・HX711(社製)・温湿度センサ(社製)・Google Pixel Watch(Google社製)</p>
+          </li>
+          <li>
+            <p class="software">Software: ArduinoIDE・Firebase</p>
+          </li>
+          <li>
+            <p class="trophy">Most Discussed Presentation Award・Best poster/demo Award </p>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=H1euNaOrKI8">
+              <p class="youtube">YouTube: https://www.youtube.com/watch?v=H1euNaOrKI8</p>
+            </a>
+          </li>
         </ul>
-
+        <p>
+          ユーザーの健康状態(心拍数)・環境状況(気温・湿度)を考慮した水分補給支援を行うシステム「HydReminder」を開発・評価した。
+        </p>
+        <h4>本研究の特徴</h4>
+        <ul>
+          <li>メインターゲット：働く世代</li>
+          <li>ユーザの状態に合わせた支援を行う水分補給システム</li>
+          <li>使用する環境によってフィードバックの方法が変化する</li>
+        </ul>
       </div>
-
     </div>
-
-
-
-    <div class="block-2" id="b4">
-
-      <div class="TITLE">
-
-        <h2>| システム詳細</h2>
-
-      </div>
-
-      <div id="linkwrap" class="wrap slide-paused" ontouchstart="">
-
-          <ul class="slideshow">
-
-            <li class="content content-hover" id="HR01"></li>
-
-            <li class="content content-hover" id="HR02"></li>
-
-            <li class="content content-hover" id="HR03"></li>
-
-          </ul>
-
-          <ul class="slideshow">
-
-            <li class="content content-hover" id="HR01"></li>
-
-            <li class="content content-hover" id="HR02"></li>
-
-            <li class="content content-hover" id="HR03"></li>
-
-          </ul>
-
-          <ul class="slideshow">
-
-            <li class="content content-hover" id="HR01"></li>
-
-            <li class="content content-hover" id="HR02"></li>
-
-            <li class="content content-hover" id="HR03"></li>
-
-          </ul>
-
-      </div>
-
-      <div class="sp">
-
-        <img id=sp_img src="img/HR01.png">
-
-        <img id=sp_img src="img/HR02.png">
-
-        <img id=sp_img src="img/HR03.png">
-
-      </div>
-
+  </div>
+  <div class="block-2">
+    <div class="TITLE">
+      <h2>| 概要</h2>
     </div>
-
+    <div class="TXT-2">
+      <p>
+        Hydration is essential for maintaining life. Consequently, a lack of awareness of the amount of water required
+        and the actual amount of water intake has been issued for all generations and may lead to diseases that result
+        in death. However, existing systems still have limited capabilities for tracking hydration reminder systems in
+        unconstrained, realistic environments. Therefore, this study employs personalized information based on the
+        user's biometric information and environmental information. We proposed and developed a smart bottle cap
+        system
+        that includes an environmental sensor, a barometric pressure sensor, an infrared sensor, the user's heart rate
+        from a smartwatch, and a cap-shaped shell to create a compact system. Our proposed system, 'HydReminder-W'
+        promotes proper hydration using the individual's biometric information, which teaches individuals about the
+        lack
+        of hydration. A comparison of hydration with HydReminder-W showed that the amount of water intake increased
+        with
+        the use of HydReminder-W. The average System Usability Scale (SUS) score of all the subjects was 78.9 points,
+        confirming that HydReminder-W has excellent usability and is helpful as a hydration promotion system.
+      </p>
+    </div>
+  </div>
+  <div class="block-2">
+    <div class="TITLE">
+      <h2>| 発表文献</h2>
+    </div>
+    <div class="TXT-2">
+      <ul>
+        <li>N. Motokawa et al. HydReminder-W: A Bottle Cap that Listens to Your Heart to Remind You to Drink!. In:
+          HEALTHINF. 2023. p. 199-208.</li>
+        <li>N. Motokawa et al. HydReminder: ホルダー駆動型水分補給促進システム. 研究報告ヒューマンコンピュータインタラクション (HCI), 2021, 2021.4: 1-5.<span><i
+              id="aw" class="trophy">Most Discussed Presentation award</i></span></li>
+        <li>N. Motokawa et al. コースター駆動型水分補給促進システム. エンタテインメントコンピューティングシンポジウム論文集, 2021, 2021: 38-44.</li>
+        <li>N. Motokawa et al. HydReminder-W: Smart Bottle Cap System Using Physiological Information BTI2 2022<span><i
+              id="aw" class="trophy">Best poster/demo award</i></span></li>
+        <li>N. Motokawa et al. 水分補給支援システムと行動変容検証 BTI3 2023</li>
+        <li>N. Motokawa et al. 人間情報に基づいた水分補給タイミング支援システムと検証 第43回人間情報学会 2022</li>
+      </ul>
+    </div>
+  </div>
+  <div class="block-2" id="b4">
+    <div class="TITLE">
+      <h2>| システム詳細</h2>
+    </div>
+    <div id="linkwrap" class="wrap slide-paused" ontouchstart="">
+      <ul class="slideshow">
+        <li class="content content-hover" id="HR01"></li>
+        <li class="content content-hover" id="HR02"></li>
+        <li class="content content-hover" id="HR03"></li>
+      </ul>
+      <ul class="slideshow">
+        <li class="content content-hover" id="HR01"></li>
+        <li class="content content-hover" id="HR02"></li>
+        <li class="content content-hover" id="HR03"></li>
+      </ul>
+      <ul class="slideshow">
+        <li class="content content-hover" id="HR01"></li>
+        <li class="content content-hover" id="HR02"></li>
+        <li class="content content-hover" id="HR03"></li>
+      </ul>
+    </div>
+    <div class="sp">
+      <img id=sp_img src="img/HR01.png">
+      <img id=sp_img src="img/HR02.png">
+      <img id=sp_img src="img/HR03.png">
+    </div>
+  </div>
   <footer id="footer"></footer>
-
   <!-- </div> -->
 
-
-
-  
-
-
-
 </body>
-
-
 
 </html>

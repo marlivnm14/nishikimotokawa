@@ -1,91 +1,92 @@
-.mail,
-.web,
-.hardware,
-.software,
-.youtube,
-.trophy,
-.loc,
-.port,
-.resm,
-.glry,
-.publ{
-    position: relative;
-}
-
-.mail::before,
-.web::before,
-.hardware::before,
-.software::before,
-.youtube::before,
-.trophy::before,
-.loc::before,
-.port::before,
-.resm::before,
-.glry::before,
-.publ::before{
-    /* 基本的に変更しないプロパティ */
-    content: '';
-    position: absolute;
-    top: 53%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    /* アイコンとテキストの間隔を調整するプロパティ */
-    left: -32px;
-
-    /* アイコンの上下位置を調整するプロパティ */
-    transform: translateY(-50%);
-
-    /* アイコンのサイズを調整するプロパティ */
-    width: 1.3em;
-    height: 1.3em;
-}
-
-.hardware::before {
-    background-image: url(img/icon/hardware.png);
-}
-
-.software::before {
-    background-image: url(img/icon/software.png);
-}
-
-.youtube::before {
-    background-image: url(img/icon/movie.png);
-}
-
-.trophy::before {
-    background-image: url(img/icon/trophy.png);
-}
-
-.loc::before {
-    background-image: url(img/icon/loc.png);
-}
-
-.mail::before {
-    background-image: url(img/icon/mail.png);
-}
-
-.web::before {
-    background-image: url(img/icon/web.png);
-}
-
-.port::before{
-    background-image: url(img/icon/port.png);
-}
-
-.resm::before{
-    background-image: url(img/icon/resume.png);
-}
-
-.glry::before{
-    background-image: url(img/icon/gallery.png);
-}
-
-.publ::before{
-    background-image: url(img/icon/publ.png);
-}
-
-#headreg.mail::before, #headreg.port::before, #headreg.resm::before, #headreg.glry::before, #headreg.publ::before{
-    left: 5px;
-  }
+.mail,
+.web,
+.hardware,
+.software,
+.youtube,
+.trophy,
+.loc,
+.port,
+.resm,
+.glry,
+.publ {
+    position: relative;
+}
+
+.mail::before,
+.web::before,
+.hardware::before,
+.software::before,
+.youtube::before,
+.trophy::before,
+.loc::before,
+.port::before,
+.resm::before,
+.glry::before,
+.publ::before {
+    /* 基本的に変更しないプロパティ */
+    content: '';
+    position: absolute;
+    top: 53%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* アイコンとテキストの間隔を調整するプロパティ */
+    left: -32px;
+    /* アイコンの上下位置を調整するプロパティ */
+    transform: translateY(-50%);
+    /* アイコンのサイズを調整するプロパティ */
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.hardware::before {
+    background-image: url(img/icon/hardware.png);
+}
+
+.software::before {
+    background-image: url(img/icon/software.png);
+}
+
+.youtube::before {
+    background-image: url(img/icon/movie.png);
+}
+
+.trophy::before {
+    background-image: url(img/icon/trophy.png);
+}
+
+.loc::before {
+    background-image: url(img/icon/loc.png);
+}
+
+.mail::before {
+    background-image: url(img/icon/mail.png);
+}
+
+.web::before {
+    background-image: url(img/icon/web.png);
+}
+
+.port::before {
+    background-image: url(img/icon/port.png);
+}
+
+.resm::before {
+    background-image: url(img/icon/resume.png);
+}
+
+.glry::before {
+    background-image: url(img/icon/gallery.png);
+}
+
+.publ::before {
+    background-image: url(img/icon/publ.png);
+}
+
+#headreg.mail::before,
+#headreg.port::before,
+#headreg.resm::before,
+#headreg.glry::before,
+#headreg.publ::before {
+    left: 5px;
+}

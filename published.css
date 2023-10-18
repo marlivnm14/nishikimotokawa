@@ -1,27 +1,15 @@
 * {
-
     box-sizing: border-box;
-
 }
-
-
 
 body {
-
     margin: 0;
-
     font-family: Yu Mincho;
-
     height: 100vh;
-
 }
 
-
-
 a {
-
     text-decoration: none;
-
 }
 
 #wrapper {
@@ -29,12 +17,9 @@ a {
     margin: 0px auto 0px auto;
     display: flex;
     flex-direction: column;
-  }
-  
-
+}
 
 /* block-000 ******************************************************************** */
-
 .block-000 {
     height: auto;
     width: 80%;
@@ -45,7 +30,6 @@ a {
     border-bottom: 1px solid rgb(227, 221, 221);
 }
 
-
 .block-000 p {
     opacity: 0.7;
     font-size: calc(25px + 8 * ((100vw - 320px) / 1120));
@@ -55,34 +39,22 @@ a {
     display: flex;
 }
 
-
 /* block-2 ******************************************************************** */
-
 .block-2 {
-
     height: auto;
-
     display: flex;
-
     flex-flow: column;
-
     width: 80%;
-
     margin-top: 1%;
-
     margin-bottom: 1%;
-
     margin-left: 10%;
-
     margin-right: 10%;
-
 }
 
 .TITLE {
     justify-content: center;
     align-items: center;
 }
-
 
 .TXT-2 {
     display: flex;
@@ -102,21 +74,20 @@ li {
     padding-bottom: 1.5%;
 }
 
-
 @media all and (max-width: 670px) {
     body {
         padding-top: 0;
     }
 
-    .block-000 p{
+    .block-000 p {
         margin-top: 5.5%;
         margin-bottom: 5.5%;
-        }
+    }
 
-    .block-000{
+    .block-000 {
         display: block;
     }
-  
+
     .block-2 {
         scroll-snap-align: center;
     }
